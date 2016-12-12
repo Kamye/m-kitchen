@@ -1,3 +1,320 @@
-body{
-    background: pink;
+/*
+    font-family: 'PlayfairDisplay-Regular';
+    font-family: 'Lato-Hairline';
+    font-family: 'Lato-Thin';
+
+*/
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
 }
+
+.clearfix:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+/*----HEADER----*/
+
+.header{
+    background: url("../images/header-bg.png") no-repeat top center;
+    background-size: cover;
+
+}
+
+.logo{
+    height: 741px;
+    position: relative;
+}
+
+.logo-link{
+    position: absolute;
+    top: calc(50% - 141px);
+    left: calc(50% - 201px);
+}
+
+/*----HEADER----*/
+
+/*----CONTENT----*/
+
+.content{
+    box-sizing: border-box;
+    padding-bottom: 540px;
+}
+
+.content-item{
+    padding-top: 211px;
+}
+
+/*--ABOUT--*/
+
+.about{
+
+}
+
+.about-wrap{
+    float: left;
+    position: relative;
+}
+
+.about-wrap-img{
+    position: absolute;
+    left: 45px;
+    bottom: 30px;
+}
+
+.about-wrap-img-bg{
+    width: 302px;
+    height: 516px;
+    background: #97716c;
+}
+
+.about-content{
+    float: right;
+    width: calc(100% - 428px);
+    padding-left: 17%;
+    box-sizing: border-box;
+    padding-top: 45px;
+}
+
+h2{
+    color: rgb(32, 19, 15);
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 48px;
+}
+
+.about-content-text{
+    color: rgb(32, 19, 15);
+    font-family: 'Lato-Thin';
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 50px;
+}
+
+/*-CONTACTS-*/
+
+.contacts{
+    padding-top: 45px;
+}
+
+.contacts-item{
+    float: left;
+    width: 16%;
+    text-align: center;
+}
+
+.contacts-link{
+    display: block;
+    height: 78px;
+    text-decoration: none;
+    &:hover{
+        .icon{
+            color: #000;
+            transition: 800ms;
+        }
+    }
+}
+
+.icon-youtube{
+    font-size: 78px;
+}
+
+.icon-vk{
+    font-size: 49px;
+}
+
+.icon-odnoklassniki{
+    font-size: 72px;
+}
+
+.icon-instagram{
+    font-size: 67px;
+}
+
+.icon-facebook{
+    font-size: 54px;
+}
+
+.icon-mm-logo-black{
+    font-size: 95px;
+}
+
+.icon {
+    font-family: "fontello";
+    color: #5e5e5e;
+    line-height: 78px;
+}
+
+/*-CONTACTS-*/
+
+/*--ABOUT--*/
+
+/*--VIEW--*/
+
+.view{
+    float: left;
+    padding: 37px 40px 0 0;
+    width: calc(100% - 618px);
+    box-sizing: border-box;
+}
+
+h4{
+    color: rgb(2, 14, 55);
+    font-family: 'Lato-Thin';
+    font-size: 18px;
+}
+
+.view-calc{
+    padding: 20px 0 45px 0;
+    color: rgb(2, 14, 55);
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 48px;
+    span{
+        vertical-align: top;
+    }
+}
+
+.num{
+    font-size: 91px;
+}
+
+.view-text{
+    color: rgb(2, 14, 55);
+    font-family: 'Lato-Thin';
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.view-wrap{
+    float: right;
+    position: relative;
+    padding-right: 40px;
+}
+
+.view-wrap-img-bg{
+    width: 499px;
+    height: 507px;
+    background: #af6e68;
+}
+
+.view-wrap-img {
+    position: absolute;
+    top: -48px;
+    left: -79px;
+}
+
+/*--VIEW--*/
+
+/*--AUDITORY--*/
+
+.auditory-wrap{
+    float: left;
+    box-sizing: border-box;
+    margin-left: 97px;
+    position: relative;
+}
+
+.auditory-wrap-img{
+    position: absolute;
+    left: -90px;
+    top: calc(50% - 110.5px);
+}
+
+.auditory-wrap-img-bg{
+    width: 278px;
+    height: 637px;
+    background: #7e7571;
+}
+
+.auditory{
+    padding-top: 110px;
+    float: right;
+    width: calc(100% - 568px);
+    padding-left: 13%;
+    box-sizing: border-box;
+}
+
+/*--AUDITORY--*/
+
+/*--STAT--*/
+
+.stat-wrap{
+    float: right;
+    position: relative;
+    margin-left: 60px;
+}
+
+.stat-wrap-img-bg{
+    width: 499px;
+    height: 507px;
+    background: #af6e68;
+}
+
+.stat-wrap-img{
+    position: absolute;
+    top: -88px;
+    left: -49px
+}
+
+/*--STAT--*/
+
+/*----CONTENT----*/
+
+/*----BEST----*/
+
+.best{
+    background: #807772;
+}
+
+.best-wrap{
+
+}
+
+.best-list{
+    padding: 80px 0 110px;
+    box-sizing: border-box;
+}
+
+.best-item{
+    width: 30%;
+    float: left;
+    margin-right: 4%;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.best-item-link{
+    display: block;
+    margin-bottom: 60px;
+}
+
+h3{
+    color: white;
+    font-family: 'PlayfairDisplay-Regular';
+    font-size: 23px;
+    line-height: 36px;
+}
+
+.best-item-text{
+    margin-top: 40px;
+    color: white;
+    font-family: 'Lato-Thin';
+    font-size: 17px;
+    line-height: 27px;
+}
+
+/*----BEST----*/
+
+
+
+
+
+
+
+
+
+
+
