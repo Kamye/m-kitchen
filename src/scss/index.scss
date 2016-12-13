@@ -8,6 +8,8 @@
 .container{
     width: 1280px;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .clearfix:after{
@@ -95,7 +97,7 @@ h2{
 
 /*-CONTACTS-*/
 
-.contacts{
+.about-content-contacts{
     padding-top: 45px;
 }
 
@@ -266,10 +268,12 @@ h4{
 
 .best{
     background: #807772;
+    height: 438px;
 }
 
 .best-wrap{
-
+    position: relative;
+    top: -270px;
 }
 
 .best-list{
@@ -280,7 +284,7 @@ h4{
 .best-item{
     width: 30%;
     float: left;
-    margin-right: 4%;
+    margin-right: 5%;
     &:last-child{
         margin-right: 0;
     }
@@ -289,6 +293,10 @@ h4{
 .best-item-link{
     display: block;
     margin-bottom: 60px;
+}
+
+.best-item-img{
+    width: 100%;
 }
 
 h3{
@@ -308,9 +316,136 @@ h3{
 
 /*----BEST----*/
 
+/*----TEAM----*/
 
+.team{
+    box-sizing: border-box;
+    padding-top: 175px;
+}
 
+.team-item-ivan{
+    margin-top: 95px;
+}
 
+.ivan{
+    float: left;
+    position: relative;
+}
+
+.ivan-bg{
+    width: 286px;
+    height: 633px;
+    background: #af6e68;
+}
+
+.ivan-photo{
+    position: absolute;
+    top: -27px;
+    left: 37px;
+}
+
+.ivan-content{
+    float: right;
+    width: calc(100% - 450px);
+    box-sizing: border-box;
+    padding-left: 20%;
+    margin-top: 100px;
+}
+
+.team-item-sasha{
+    margin-top: 227px;
+}
+
+.sasha{
+    float: right;
+    position: relative;
+}
+
+.sasha-bg{
+    width: 323px;
+    height: 510px;
+    background: #7e7571;
+}
+
+.sasha-photo{
+    position: absolute;
+    top: -85px;
+    left: -195px;
+}
+
+.sasha-content{
+    margin-top: 35px;
+    float: left;
+    width: calc(100% - 515px);
+    box-sizing: border-box;
+    padding-right: 10%;
+}
+
+/*----TEAM----*/
+
+/*----OTHER----*/
+
+.other{
+    margin-top: 440px;
+    height: 590px;
+    background: #97716c;
+}
+
+.other-wrap{
+    position: relative;
+    top: -275px;
+}
+
+.other-head{
+    margin-bottom: 85px;
+}
+
+.other-item{
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.other-link{
+    display: block;
+}
+
+.other-img{
+    width: 100%;
+}
+
+/*----OTHER----*/
+
+/*----FOOTER----*/
+
+.footer{
+    background: #000;
+    height: 600px;
+    box-sizing: border-box;
+    padding-top: 261px
+}
+
+.footer-contacts{
+    width: 520px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-size: 0;
+    .icon{
+        color: #fff;
+    }
+    .contacts-link{
+        &:hover{
+            .icon{
+                color: #af6e68;
+            }
+        }
+    }
+}
+
+/*----FOOTER----*/
 
 
 
