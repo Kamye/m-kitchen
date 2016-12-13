@@ -1,15 +1,232 @@
-@media screen and (max-width: 1300px) and (min-width: 1201px) {
+@media screen and (max-width: 1350px) and (min-width: 1201px) {
     .container{
         width: 1170px;
+    }
+
+    .view-wrap-img {
+        top: 41px;
+        left: 0;
+        width: 556px;
+    }
+
+    .stat-wrap-img {
+        left: 0;
+        width: 516px;
     }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 993px){
+    .container{
+        width: 970px;
+    }
+
+    .view-wrap-img {
+        top: 41px;
+        left: 0;
+        width: 550px
+    }
+
+    .stat-wrap-img {
+        left: 0;
+        width: 512px;
+    }
+
+    .content-item {
+        padding-top: 160px;
+    }
+
+    .about-content {
+        padding-left: 6%;
+    }
+
+    .about-content, .about-content-contacts {
+        padding-top: 0;
+    }
+
+    .auditory {
+        padding-left: 7%;
+    }
+
+    .view {
+        width: calc(100% - 582px);
+    }
+
+    .team {
+        padding-top: 120px;
+    }
+
+    .best-wrap {
+        top: -233px;
+    }
+
+    .ivan-content {
+        padding-left: 5%;
+        margin-top: 70px;
+    }
+
+    .team-item-sasha {
+        margin-top: 200px;
+    }
+
+    .sasha-content {
+        margin-top: 0;
+        width: calc(100% - 465px);
+        padding-right: 5%;
+    }
+
+    .sasha-photo {
+        top: -58px;
+        left: -142px;
+        width: 411px;
+    }
+
+    .other {
+        margin-top: 345px;
+        height: 514px;
+    }
+
+    .other-wrap {
+        position: relative;
+        top: -232px;
+    }
+
+    .footer {
+        background: #000;
+        height: 500px;
+        padding-top: 211px;
+    }
+
+    .content {
+        padding-bottom: 345px;
+    }
 
 }
 
 @media screen and (max-width: 992px) and (min-width: 769px){
+    .container{
+        width: 970px;
+    }
 
+    .view-wrap-img {
+        top: 41px;
+        left: 0;
+        width: 550px
+    }
+
+    .stat-wrap-img {
+        left: 0;
+        width: 512px;
+    }
+
+    .content-item {
+        padding-top: 160px;
+    }
+
+    .about-content {
+        padding-left: 6%;
+    }
+
+    .about-content, .about-content-contacts {
+        padding-top: 0;
+    }
+
+    .auditory {
+        padding-left: 7%;
+    }
+
+    .view {
+        width: calc(100% - 582px);
+    }
+
+    .team {
+        padding-top: 120px;
+    }
+
+    .best-wrap {
+        top: -233px;
+    }
+
+    .ivan-content {
+        padding-left: 5%;
+        margin-top: 70px;
+    }
+
+    .team-item-sasha {
+        margin-top: 200px;
+    }
+
+    .sasha-content {
+        margin-top: 0;
+        width: calc(100% - 465px);
+        padding-right: 5%;
+    }
+
+    .sasha-photo {
+        top: -58px;
+        left: -142px;
+        width: 411px;
+    }
+
+    .other {
+        margin-top: 345px;
+        height: 514px;
+    }
+
+    .other-wrap {
+        position: relative;
+        top: -232px;
+    }
+
+    .footer {
+        background: #000;
+        height: 500px;
+        padding-top: 211px;
+    }
+
+    .content {
+        padding-bottom: 345px;
+    }
+
+    .container{
+        width: 750px;
+    }
+
+    .logo {
+        height: 600px;
+        position: relative;
+    }
+
+    .about-wrap,
+    .about-content,
+    .view-wrap,
+    .view,
+    .auditory-wrap,
+    .auditory,
+    .stat-wrap,
+    .stat{
+        float: none;
+        width: 100%;
+    }
+
+    .content-item {
+        padding-top: 100px;
+    }
+
+    .about-content{
+        margin-top: 30px;
+    }
+
+    .about-content-contacts {
+        padding-top: 45px;
+    }
+
+    .view-content{
+        display: inline-block;
+    }
+
+    .view-wrap{
+        text-align: right;
+    }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
