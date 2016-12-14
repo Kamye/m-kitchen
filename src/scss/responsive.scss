@@ -1,4 +1,4 @@
-@media screen and (max-width: 1350px) and (min-width: 1201px) {
+@media screen and (max-width: 1445px) and (min-width: 1201px) {
     .container{
         width: 1170px;
     }
@@ -190,11 +190,6 @@
 
     .container{
         width: 750px;
-    }
-
-    .logo {
-        height: 600px;
-        position: relative;
     }
 
     .about-wrap,
@@ -734,9 +729,16 @@
     .stat-wrap-img {
         width: 440px;
     }
+
+    .covervid-wrapper{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 479px) and (min-width: 320px){
+    .covervid-wrapper{
+        display: none;
+    }
     .slicknav_menu {
         display: block;
     }
