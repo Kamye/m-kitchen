@@ -1,5 +1,14 @@
 //= templates/header.html
-
+<div class="nav">
+    <div class="container">
+        <ul id="menu" class="nav-list clearfix">
+            <li class="nav-item"><a class="nav-item-link" href="#content">Lorem ipsum</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#best">Лучшие выпуски</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#team">О проекте</a></li>
+            <li class="nav-item"><a class="nav-item-link" href="#other">Другие проекты</a></li>
+        </ul>
+    </div>
+</div>
 <header class="header">
     <div class="container">
         <div class="logo">
@@ -9,7 +18,7 @@
 </header>
 
 <div class="container">
-    <ul class="content">
+    <ul class="content" id="content">
         <li class="content-item clearfix">
             <div class="about">
                 <div class="about-wrap">
@@ -40,11 +49,11 @@
             <div class="view clearfix">
                 <div class="view-item">
                     <h4>Просмотры</h4>
-                    <p class="view-calc"><span class="num calc">26,4</span> <sup>млн</sup></p>
+                    <p class="view-calc"><span class="num calc" id="26,4">26,4</span> <sup>млн</sup></p>
                 </div>
                 <div class="view-item">
                     <h4>Подписчики</h4>
-                    <p class="view-calc"><span class="num calc">1,34</span> <sup>млн</sup></p>
+                    <p class="view-calc"><span class="num calc" id="1,34">1,34</span> <sup>млн</sup></p>
                 </div>
                 <p class="view-text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился</p>
             </div>
@@ -57,11 +66,11 @@
             <div class="auditory">
                 <div class="view-item">
                     <h4>Аудиория М / Ж</h4>
-                    <p class="view-calc"><span class="num calc">60 / 40</span> <sup>%</sup></p>
+                    <p class="view-calc"><span class="num calc"><span id="60">60</span> / <span id="40">40</span></span> <sup>%</sup></p>
                 </div>
                 <div class="view-item">
                     <h4>Женщины с детьми в возрасте</h4>
-                    <p class="view-calc"><span class="num calc">3 - 6</span> <sup>лет</sup></p>
+                    <p class="view-calc"><span class="num calc"><span id="3">3</span> - <span id="6">6</span></span> <sup>лет</sup></p>
                 </div>
                 <p class="view-text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился</p>
             </div>
@@ -76,11 +85,11 @@
             <div class="stat view">
                 <div class="view-item">
                     <h4>Количество выпусков</h4>
-                    <p class="view-calc"><span class="num calc">65</span> <sup>шт</sup></p>
+                    <p class="view-calc"><span class="num calc" id="65">65</span> <sup>шт</sup></p>
                 </div>
                 <div class="view-item">
                     <h4>Количество интеграций</h4>
-                    <p class="view-calc"><span class="num calc">43</span> <sup>шт</sup></p>
+                    <p class="view-calc"><span class="num calc" id="43">43</span> <sup>шт</sup></p>
                 </div>
                 <p class="view-text">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился</p>
             </div>
@@ -91,7 +100,7 @@
 <div class="best">
     <div class="best-wrap">
         <div class="container">
-            <h2>Лучшие выпуски</h2>
+            <h2 id="best">Лучшие выпуски</h2>
             <ul class="best-list clearfix">
                 <li class="best-item">
                     <a href="#" class="best-item-link"><img src="images/best-1.png" alt="" class="best-item-img"></a>
@@ -116,7 +125,7 @@
 <div class="container">
     <ul class="team">
         <li class="team-item team-item-head">
-            <h2>Команда о проекте</h2>
+            <h2 id="team">Команда о проекте</h2>
         </li>
         <li class="team-item team-item-ivan clearfix">
             <div class="ivan">
@@ -141,10 +150,10 @@
     </ul>
 </div>
 
-<div class="other">
+<div class="other" >
     <div class="container">
         <ul class="other-wrap clearfix">
-            <li class="other-head">
+            <li class="other-head" id="other">
                 <h2>Другие наши проекты</h2>
             </li>
             <li class="other-item"><a class="other-link" href="#"><img class="other-img" src="images/m-kitchen.png" alt=""></a></li>

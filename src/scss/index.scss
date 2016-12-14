@@ -2,10 +2,12 @@
     font-family: 'PlayfairDisplay-Regular';
     font-family: 'Lato-Hairline';
     font-family: 'Lato-Thin';
+    font-family: 'Lato-Light';
 
 */
 
 .container{
+    position: relative;
     width: 1280px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -23,7 +25,32 @@
 .header{
     background: url("../images/header-bg.png") no-repeat top center;
     background-size: cover;
+}
 
+.nav{
+    background: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-item {
+    padding: 5px 0;
+    float: left;
+    width: 25%;
+}
+
+.nav-item-link{
+    font-family: 'Lato-Light';
+    text-decoration: none;
+    color: #000;
+    padding: 3px 0;
+    &:hover{
+        border-bottom: 1px solid #000;
+    }
+}
+
+.slicknav_menu {
+    display: none;
 }
 
 .logo{
