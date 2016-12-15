@@ -2,20 +2,6 @@ $('#menu').slicknav({
     prependTo:'body'
 });
 
-$("#menu, .slicknav_nav").on("click","a", function (event) {
-    //отменяем стандартную обработку нажатия по ссылке
-    event.preventDefault();
-
-    //забираем идентификатор бока с атрибута href
-    var id  = $(this).attr('href'),
-
-    //узнаем высоту от начала страницы до блока на который ссылается якорь
-        top = $(id).offset().top;
-
-    //анимируем переход на расстояние - top за 1500 мс
-    $('body,html').animate({scrollTop: top}, 1500);
-});
-
 var options = {
     useEasing : true,
     useGrouping : true,
@@ -49,3 +35,41 @@ var calc8 = new CountUp("43", 0, 43, 0, 2.5, options);
 calc8.start();
 
 $('.covervid-video').coverVid(1440, 810);
+
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-46
+        }, 500, 'linear', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('.nav a').each(function () {
+        var currentLink = $(this);
+        var refElement = $(currentLink.attr("href"));
+        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+            $('.nav a').removeClass("active");
+            currentLink.addClass("active");
+        }
+        else{
+            currentLink.removeClass("active");
+        }
+    });
+}
