@@ -34,42 +34,49 @@ calc7.start();
 var calc8 = new CountUp("43", 0, 43, 0, 2.5, options);
 calc8.start();
 
-$('.covervid-video').coverVid(1440, 810);
-
-$(document).ready(function () {
-    $(document).on("scroll", onScroll);
-
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-        $(document).off("scroll");
-
-        $('a').each(function () {
-            $(this).removeClass('active');
-        });
-        $(this).addClass('active');
-
-        var target = this.hash;
-        $target = $(target);
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-46
-        }, 500, 'linear', function () {
-            window.location.hash = target;
-            $(document).on("scroll", onScroll);
-        });
+var lastId,
+    topMenu = $(".nav"),
+    topMenuHeight = topMenu.outerHeight()+15,
+// All list items
+    menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+        var item = $($(this).attr("href"));
+        if (item.length) { return item; }
     });
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function(e){
+    var href = $(this).attr("href"),
+        offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+    $('html, body').stop().animate({
+        scrollTop: offsetTop
+    }, 600);
+    e.preventDefault();
 });
 
-function onScroll(event){
-    var scrollPosition = $(document).scrollTop();
-    $('.nav a').each(function () {
-        var currentLink = $(this);
-        var refElement = $(currentLink.attr("href"));
-        if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-            $('.nav a').removeClass("active");
-            currentLink.addClass("active");
-        }
-        else{
-            currentLink.removeClass("active");
-        }
+// Bind to scroll
+$(window).scroll(function(){
+    // Get container scroll position
+    var fromTop = $(this).scrollTop()+topMenuHeight;
+
+    // Get id of current scroll item
+    var cur = scrollItems.map(function(){
+        if ($(this).offset().top < fromTop)
+            return this;
     });
-}
+    // Get the id of the current element
+    cur = cur[cur.length-1];
+    var id = cur && cur.length ? cur[0].id : "";
+
+    if (lastId !== id) {
+        lastId = id;
+        // Set/remove active class
+        menuItems
+            .parent().removeClass("active")
+            .end().filter("[href='#"+id+"']").parent().addClass("active");
+    }
+});
+
+$('.covervid-video').coverVid(1440, 810);
